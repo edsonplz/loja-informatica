@@ -1,0 +1,45 @@
+.container-cab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #ACACAC;
+    background-color: black;
+    padding: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+.white {
+    color: white;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+.container-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.botao {
+    color: #0156FF;
+    background-color: black;
+    border: #0156FF solid 2px;
+    border-radius: 50px;
+    margin: 0px;
+    padding: 9px;
+}
