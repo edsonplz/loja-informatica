@@ -55,3 +55,18 @@ strong {
     font-family: 'Poppins';
     margin: 0;
 }
+
+.banner {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
