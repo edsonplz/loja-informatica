@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,78 +8,156 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="container-cab">
-            <div class="hora">
-                <span>Seg-Sex</span>
-                <span class="white">9:00 - 17:30</span>
-            </div>
-            <div class="endereco">
-                <span>Visite nossa loja no endereço rua da Code Start, 123 ou <strong class="white">Entre em contato conosco</strong></span>
-            </div>
-            <div class="contacts white">
-                <span>Telefone: (XX) 99999- 9999</span>
+        <div class="container">
+            <div class="cab">
+                <div class="hora">
+                    <span>Seg-Sex</span>
+                    <span class="white">9:00 - 17:30</span>
+                </div>
+                <div class="endereco">
+                    <span>Visite nossa loja no endereço rua da Code Start, 123 ou <strong class="white">Entre em contato
+                            conosco</strong></span>
+                </div>
+                <div class="contacts white">
+                    <span>Telefone: (XX) 99999- 9999</span>
+                </div>
             </div>
         </div>
     </header>
     <nav>
-        <div class="container-bar">
-            <div class="img"> 
-                <img src="assets\logo 2.png" alt="logo">
-            </div>
-            <div></div>
-            <div class="elements white">
-                <div>CPUs</div>
-                <div>Notebooks</div>
-                <div>Monitores</div>
-                <button class="botao">Entre em contato</button>
-            </div>
-            <div>
-                
+        <div class="container">
+            <div class="navbar">
+                <div class="img">
+                    <img src="assets\logo 2.png" alt="logo">
+                </div>
+                <div></div>
+                <div class="elements white">
+                    <div>CPUs</div>
+                    <div>Notebooks</div>
+                    <div>Monitores</div>
+                    <button class="botao">Entre em contato</button>
+                </div>
+                <div class="end-elements">
+                    <img src="assets/search.svg" alt="Pesquisar">
+                    <img src="assets/cart.svg" alt="Carrinho de compras">
+                </div>
             </div>
         </div>
     </nav>
-    <section class="alinhamento">
-        <div>
-            <div>
-                <img class="banner" src="assets\banner.png" alt="Banner">
+    <section>
+        <div class="container">
+            <div class="banner">
+                <img src="assets\banner.png" alt="Banner">
             </div>
         </div>
     </section>
     <section>
-        <div class="title-new-products">
-            <h1>Novos produtos</h1>
-            <a href="">Veja todos os produtos</a>
-        </div>
-        <div class="new-products">
-            <div class="product-1">
-                <span class="green">Em estoque</span>
-                <img src="assets\tablet.png" alt="tablet">
-                <img class="star" src="assets\Estrelas.png" alt="">
-                <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+        <div class="container">
+            <div class="title-new-products">
+                <h1>Novos produtos</h1>
+                <a href="">Veja todos os produtos</a>
             </div>
-            <div class="product-1">
-                <span class="red">Indisponivel</span>
-                <img src="assets\image 29.png" alt="tablet">
-                <img class="star" src="assets\Estrelas.png" alt="">
-                <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+            <div class="new-products">
+                <div class="product">
+                    <div class="disponibilidade">
+                        <img src="assets/disponivel-icon.svg" alt="">
+                        <span class="green">Em estoque</span>
+                    </div>
+                    <img src="assets/new-products/produto-1.svg" alt="tablet">
+                    <div class="feedbacks">
+                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
+                        <a href="#">Comentários (4)</a>                        
+                    </div>
+                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+                    <br>
+                    <span class="old-price">R$ 699,00</span>
+                    <span class="new-price">R$ 499,00</span>
+                </div>
+                <div class="product">
+                    <div class="disponibilidade">
+                        <img src="assets/out-stock.svg" alt="">
+                        <span class="red">Indisponivel</span>
+                    </div>
+                    <img src="assets/new-products/produto-2.svg" alt="tablet">
+                    <div class="feedbacks">
+                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
+                        <a href="#">Comentários (4)</a>                        
+                    </div>
+                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+                    <br>
+                    <span class="old-price">R$ 699,00</span>
+                    <span class="new-price">R$ 499,00</span>
+                </div>
+                <div class="product">
+                    <div class="disponibilidade">
+                        <img src="assets/disponivel-icon.svg" alt="">
+                        <span class="green">Em estoque</span>
+                    </div>
+                    <img src="assets/new-products/produto-3.svg" alt="tablet">
+                    <div class="feedbacks">
+                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
+                        <a href="#">Comentários (4)</a>                        
+                    </div>
+                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+                    <br>
+                    <span class="old-price">R$ 699,00</span>
+                    <span class="new-price">R$ 499,00</span>
+                </div>
+                <div class="product">
+                    <div class="disponibilidade">
+                        <img src="assets/disponivel-icon.svg" alt="">
+                        <span class="green">Em estoque</span>
+                    </div>
+                    <img src="assets/new-products/produto-4.svg" alt="tablet">
+                    <div class="feedbacks">
+                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
+                        <a href="#">Comentários (4)</a>                        
+                    </div>
+                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+                    <br>
+                    <span class="old-price">R$ 699,00</span>
+                    <span class="new-price">R$ 499,00</span>
+                </div>
+                <div class="product">
+                    <div class="disponibilidade">
+                        <img src="assets/disponivel-icon.svg" alt="">
+                        <span class="green">Em estoque</span>
+                    </div>
+                    <img src="assets/new-products/produto-5.svg" alt="tablet">
+                    <div class="feedbacks">
+                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
+                        <a href="#">Comentários (4)</a>                        
+                    </div>
+                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+                    <br>
+                    <span class="old-price">R$ 699,00</span>
+                    <span class="new-price">R$ 499,00</span>
+                </div>
+                <div class="product">
+                    <div class="disponibilidade">
+                        <img src="assets/disponivel-icon.svg" alt="">
+                        <span class="green">Em estoque</span>
+                    </div>
+                    <img src="assets/new-products/produto-6.svg" alt="tablet">
+                    <div class="feedbacks">
+                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
+                        <a href="#">Comentários (4)</a>                        
+                    </div>
+                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
+                    <br>
+                    <span class="old-price">R$ 699,00</span>
+                    <span class="new-price">R$ 499,00</span>
+                </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>
