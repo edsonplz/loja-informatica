@@ -3,6 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+header {
+    background-color: black;
 }
 
 .cab {
@@ -11,10 +16,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     color: #ACACAC;
-    background-color: black;
     padding: 20px;
     font-weight: 600;
-    background-color: black;
     font-size: 12px;    
 }
 
@@ -37,7 +40,6 @@ strong {
     align-items: center;
     padding: 15px;
     font-weight: 600;
-    background-color: black;
     font-size: 14px;
     width: 100%;
 }
@@ -63,6 +65,7 @@ strong {
 *{
     font-family: 'Poppins';
     margin: 0;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -93,6 +96,7 @@ strong {
 
 .star {
     width: 40%;
+    height: 12px;
 }
 
 .green {
@@ -127,11 +131,38 @@ strong {
 
 .product a {
     color: #A2A6B0;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .feedbacks {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-section-bar {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navigation-bar {
+    display: flex;
+    margin-left: 100px;
+    gap: 25px;
+}
+
+.navigation-bar li {
+    list-style: none;
+    color: #838383;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navigation-bar li:first-child {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #0156FF;
+    text-underline-offset: 5px;
 }
