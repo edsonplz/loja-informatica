@@ -81,13 +81,13 @@ strong {
 .new-products {
     display: flex;
     width: 80%;
-    gap: 10px;
+    gap: 0px;
 }
 
 .product {
     display: flex;
     flex-direction: column;
-
+    margin: 0px 10px;
 }
 
 .red {
@@ -131,7 +131,7 @@ strong {
 
 .product a {
     color: #A2A6B0;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .feedbacks {
@@ -173,6 +173,7 @@ strong {
     width: 80%;
     align-items: center;
     gap: 20px;
+    justify-content: left;
 }
 
 .products {
