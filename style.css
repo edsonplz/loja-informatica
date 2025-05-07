@@ -213,3 +213,21 @@ strong {
     border-radius: 15px;
     transition: 0.3s;
 }
+
+.general-marcas {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 40px;
+    width: 80%;
+}
+
+.marca {
+    margin: 25px 20px;
+    margin: 0 auto;
+}
+
+.depoimento {
+    background-color: #F5F7FF;
+    width: 60%;
+    padding: 30px 20px;
+}
