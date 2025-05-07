@@ -228,6 +228,15 @@ strong {
 
 .depoimento {
     background-color: #F5F7FF;
-    width: 60%;
-    padding: 30px 20px;
+    width: 65%;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-depoimento, .actions-scrool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
