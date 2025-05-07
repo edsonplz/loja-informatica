@@ -240,3 +240,21 @@ strong {
     justify-content: space-between;
     align-items: center;
 }
+
+.general-benefits {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    margin: 50px 0px;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+    width: 100%;
+    text-align: center;
+}
