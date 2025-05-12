@@ -50,6 +50,7 @@ strong {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    cursor: pointer;
 }
 
 .botao {
@@ -60,6 +61,7 @@ strong {
     margin: 0px;
     padding: 9px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 *{
@@ -87,7 +89,8 @@ strong {
 .product {
     display: flex;
     flex-direction: column;
-    margin: 0px 10px;
+    padding: 0px 10px;
+    cursor: pointer;
 }
 
 .red {
@@ -397,16 +400,20 @@ footer {
 }
 
 .icons-footer {
-    border-top: #FFFFFF20 solid 5px;
+    border-top: #FFFFFF20 solid 2px;
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0px;
+    padding: 10px 0px;
 }
 
 .copyright p {
     font-size: 12px;
     color: #FFFFFF90;
     font-weight: 500;
+}
+
+.end-elements {
+    cursor: pointer;
 }
