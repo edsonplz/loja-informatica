@@ -122,6 +122,95 @@ header {
     right: -12px;
 }
 
+/* Estilo dos novos produtos */
+#new-products {
+    margin: 30px 0px;
+}
+
+.header-new-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-new-products h1 {
+    font-weight: bold;
+}
+
+.header-new-products a {
+    color: #0156FF;
+    font-size: 13px;
+}
+
+.general-content-card-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-new-products {
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.card-new-products:hover {
+    background-color: #A2A6B070;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.stock {
+    display: flex;
+    gap: 5px;
+}
+
+.stock p {
+    font-size: 12px;
+}
+
+.in-stock {
+    color: #78A962;
+}
+
+.out-stock {
+    color: #C94D3F;
+}
+
+.img-product {
+    display: block;
+    margin: 0 auto;
+}
+
+.product-review {
+    display: flex;
+    gap: 5px;
+}
+
+.product-review p {
+    font-size: 12px;
+    color: #A2A6B0;
+}
+
+.info-product {
+    margin-top: 20px;
+}
+
+.info-product h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 14px;
+}
+
+.new-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* Estilo para telas medias */
 @media screen and (max-width: 1200px) {
     .info-header {
@@ -165,4 +254,18 @@ header {
     .menu ul li:last-child {
         margin-top: 10px;
     }
+
+    .general-content-card-products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .general-content-card-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
