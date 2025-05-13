@@ -1,0 +1,168 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 10px auto;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #000;
+    padding: 8px 0px 20px 0px;
+    color: #fff;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.opening-hours span, .our-adress p {
+    color: #A2A6B0;
+}
+
+.our-adress span {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding: 3px;
+}
+
+.store-contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 1s;
+}
+
+.menu ul li a:hover {
+    color: #0156FF;
+}
+
+.menu ul li:last-child a{
+    border: 2px solid #0156FF;
+    border-radius: 20px;
+    padding: 8px 25px;
+    color: #0156FF;
+    transition: none;
+}
+
+.menu ul li:last-child a:hover{
+    border: 2px solid #FFF;
+    color: #fff;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: #A2A6B0;
+}
+
+.action-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.items-cart {
+    height: 10px;
+    width: 10px;
+    background-color: #0156FF;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    top: -10px;
+    right: -12px;
+}
+
+/* Estilo para telas medias */
+@media screen and (max-width: 1200px) {
+    .info-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .action-icons {
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-open {
+        display: block;
+        position: absolute;
+        top: 140px;
+        right: 40px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 2;
+    }
+
+    .mobile-menu-open ul {
+        flex-direction: column;
+    }
+
+    .mobile-menu-open ul li {
+        margin-bottom: 10px;
+    }
+    .menu ul li:last-child {
+        margin-top: 10px;
+    }
+}
