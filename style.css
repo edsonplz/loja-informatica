@@ -211,6 +211,39 @@ header {
     font-weight: bold;
 }
 
+/* Estilo para produtos */
+.product-filter-brands ul {
+    display: flex;
+}
+
+.product-filter-brands ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #838383;
+    cursor: pointer;
+}
+
+.product-filter-brands ul li.product-brand-active {
+    color: black;
+    border-bottom: 2px solid #0156FF;
+}
+
+.notebook-products, .cpu-products {
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-cover {
+    margin-right: 20px;
+}
+
+.product-cover img {
+    height: fit-content;
+    width: 300px;
+}
+
 /* Estilo para telas medias */
 @media screen and (max-width: 1200px) {
     .info-header {
