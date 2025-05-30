@@ -78,6 +78,38 @@ window.addEventListener('DOMContentLoaded', () => {
         slider.style.transform = `translateX(${currentPosition}px)`;
         requestAnimationFrame(moveSlider);
     }
-
+    
     requestAnimationFrame(moveSlider);
+})
+
+// Slider de Depoimentos
+document.addEventListener("DOMContentLoaded", () => {
+    const testimonials = document.querySelectorAll('.testimonial');
+    const controls = document.querySelectorAll('.controls-testimonials span');
+    const firstTestimonial = testimonials[0];
+    const firstControl = controls[0];
+
+    testimonials.forEach(testimonial => {
+        testimonial.style.display = 'none';
+    });
+    firstTestimonial.style.display = 'block';
+
+    controls.forEach(control => {
+        control.addEventListener('click', () => {
+            const targetSlide = control.getAttribute('data-slide');
+            controls.forEach(c => {
+                c.classList.remove('active-testimonial');
+            });
+            control.classList.add('active-testimonial');
+
+            testimonials.forEach(testimonial => {
+                testimonial.style.display = 'none';
+            });
+
+            const showTestimonial = document.querySelector('.testimonial[data-slide="' + targetSlide + '"]');
+            showTestimonial.style.display = 'block';
+        })
+    })
+
+    firstTestimonial.classList.add('active-testimonial');
 })
