@@ -113,3 +113,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
     firstTestimonial.classList.add('active-testimonial');
 })
+
+// Manipulação do carrinho de produtos
+const productsArray = [];
+
+function increaseQuantity(event) {
+    const quantityElement = event.target.parentElement.querySelector('.number-quantity');
+    const quantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = quantity + 1;
+}
+
+function decreaseQuantity(event) {
+    const quantityElement = event.target.parentElement.querySelector('.number-quantity');
+    const quantity = parseInt(quantityElement.textContent);
+    if(quantity > 0) {
+        quantityElement.textContent = quantity - 1;
+    }
+}
+
+function addProductToCart(event) {
+    const productCard = event.target.closest('.card-new-products');
+    const productName = productCard.querySelector('.info-product h3').textContent;
+    const priceText = productCard.querySelector('.new-price').textContent;
+    const price = parseFloat(priceText.replace("R$", ""));
+
+    const quantityElement = productCard.querySelector('.number-quantity')
+
+    let quantity = parseInt(quantityElement.textContent);
+
+    const existingProductIndex = productsArray.findIndex((product) => product.productName === productName);
+
+    if(quantity > 0) {
+        if(existingProductIndex !== -1) {
+            productsArray[existingProductIndex].quantity = quantity;
+        } else {
+            productsArray.push({
+                productName: productName,
+                price: price,
+                quantity: quantity
+            }
+            )
+        } 
+    } else {
+        if(existingProductIndex !== 1) {
+            productsArray.splice(existingProductIndex, 1);
+        }
+    }
+}
+
+const decreaseButtons = document.querySelectorAll('.decrease-quantity')
+
+decreaseButtons.forEach(button => {
+    button.addEventListener('click', decreaseQuantity)
+})
+
+const increaseButtons = document.querySelectorAll('.increase-quantity')
+
+increaseButtons.forEach(button => {
+    button.addEventListener('click', increaseQuantity)
+})
