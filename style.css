@@ -384,18 +384,18 @@ header {
 }
 
 /* Estilo para formularios */
-.content-contact-form {
+.general-content-form {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
 }
 
-.texts-form-contact h1 {
+.titles-form h1 {
     font-size: 32px;
     margin-bottom: 15px;
 }
 
-.info-contact-form {
+.info-content-form {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -403,7 +403,7 @@ header {
 
 .line-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column dense;
     gap: 20px;
     margin: 10px 0;
 }
@@ -537,6 +537,50 @@ footer .container {
     margin-top: 50px;
 }
 
+/* Estilo para carrinho */
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb li:last-child {
+    font-weight: bold;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: " > ";
+    color: #777;
+}
+
+.input-cep {
+    position: relative;
+}
+
+.search-cep {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    background-color: #0156FF;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
 /* Estilo para telas medias */
 @media screen and (max-width: 1200px) {
     .info-header {
@@ -592,11 +636,12 @@ footer .container {
         align-items: center;
     }
 
-    .content-contact-form {
+    .general-content-form {
         grid-template-columns: 1fr;
     }
 
     .line-form {
+        grid-auto-flow: unset;
         grid-template-columns: 1fr;
     }
 

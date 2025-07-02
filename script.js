@@ -184,3 +184,27 @@ const increaseButtons = document.querySelectorAll('.increase-quantity')
 increaseButtons.forEach(button => {
     button.addEventListener('click', increaseQuantity)
 })
+
+//Carrinho
+
+const inputCep = document.querySelector('#cep');
+const inputStreet = document.querySelector('#street');
+const inputCity = document.querySelector('#city');
+const inputState = document.querySelector('#state');
+const inputNeigthborhood = document.querySelector('#neigthborhood');
+const inputNumber = document.querySelector('#number');
+
+function buscarCep() {
+    const typedCep = inputCep.value.trim().replace(/\D/g, "");
+
+    fetch(`https://viacep.com.br/ws/${typedCep}/json/`).then(response => {
+        if(!response.ok) {
+            console.error("Não foi possível obter os dados do CEP")
+        }
+        return response.json();
+    }).then((data) => {
+        console.log(data)
+    })
+
+    console.log(typedCep)
+}
