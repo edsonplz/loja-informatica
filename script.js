@@ -203,8 +203,13 @@ function buscarCep() {
         }
         return response.json();
     }).then((data) => {
-        console.log(data)
-    })
+        inputCity.value = data.localidade;
+        inputNeigthborhood.value = data.bairro;
+        inputState.value = data.estado;
+        inputStreet.value = data.logradouro;
+    }).catch((error => {
+        console.error("Erro: ", error)
+    }))
 
     console.log(typedCep)
 }
