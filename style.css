@@ -231,6 +231,7 @@ header {
 .product-review {
     display: flex;
     gap: 5px;
+    justify-content: space-between;
 }
 
 .product-review p {
