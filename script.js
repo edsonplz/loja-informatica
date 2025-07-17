@@ -198,6 +198,9 @@ const inputState = document.querySelector('#state');
 const inputNeigthborhood = document.querySelector('#neigthborhood');
 const inputNumber = document.querySelector('#number');
 const savedProductsArray = JSON.parse(localStorage.getItem("productsArray"));
+const totalOrder = savedProductsArray.reduce((acumulator, currentProduct) => {
+    return acumulator + currentProduct.quantity * currentProduct.price;
+}, 0)
 
 function buscarCep() {
     const typedCep = inputCep.value.trim().replace(/\D/g, "");
@@ -246,4 +249,59 @@ document.addEventListener("DOMContentLoaded", function() {
         row.appendChild(subTotalCell);
         tbody.appendChild(row);
     }
+})
+
+function finalizarPedido() {
+    const fullName = document.querySelector('#fullname').value;
+    const rg = document.querySelector('#rg').value;
+    const cpf = document.querySelector('#cpf').value;
+    const cep = inputCep.value;
+    const street = inputStreet.value;
+    const city = inputCity.value;
+    const number = inputNumber.value;
+    const neigthborhood = inputNeigthborhood.value;
+    const state = inputState.value;
+
+    let textFormated = `Olá gostaria de fazer um pedido.
+    Meus dados são:
+    Nome: ${fullName}
+    Rg: ${rg}
+    CPF: ${cpf}
+    Endereço: Rua: ${street}, Cidade: ${city}, Estado ${state}, Bairro ${neigthborhood}, Número/Complemento ${number}, CEP ${cep}
+    Os produtos que escolhi são: `;
+
+    savedProductsArray.forEach((product) => {
+        textFormated += `
+        Nome do produto: ${product.productName}
+        Preço: R$ ${product.price}
+        Quantidade: ${product.quantity}`;
+    })
+
+    textFormated += `
+    Total do Pedido: R$ ${totalOrder}`
+
+    const textEncoded = encodeURIComponent(textFormated);
+
+    window.open(`https://wa.me/5583993719980?text=${textEncoded}`)
+}
+
+function limparCarrinho() {
+    localStorage.removeItem("productsArray");
+    inputCep.value = '';
+    inputStreet.value = '';
+    inputCity.value = '';
+    inputNeigthborhood.value = '';
+    inputNumber.value = '';
+    inputState.value = '';
+    location.reload();
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+    const subtotal = document.querySelector('#subtotal-value')
+    subtotal.textContent = totalOrder;
+
+    const shipmentValue = document.querySelector('#shipment-value').textContent;
+    const totalOrderField = document.querySelector('#total-order-value');
+
+    totalOrderField.textContent = Number(totalOrder) + Number(shipmentValue);
 })
