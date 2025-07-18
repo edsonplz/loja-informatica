@@ -148,9 +148,9 @@ function decreaseQuantity(event) {
     }
 }
 
-function updateCart() {
+function updateCart(quantity) {
     const cart = document.querySelector('.items-cart')
-    cart.textContent = productsArray.length
+    cart.textContent = quantity;
 }
 
 function addProductToCart(event) {
@@ -185,7 +185,7 @@ function addProductToCart(event) {
         }
     }
     localStorage.setItem("productsArray", JSON.stringify(productsArray));
-    updateCart()
+    updateCart(productsArray ? productsArray.length : 0);
 }
 
 const addCartButtons = document.querySelectorAll('.confirm-add-cart')
@@ -221,6 +221,10 @@ const totalOrder = savedProductsArray ? savedProductsArray.reduce((acumulator, c
 const subtotal = document.querySelector('#subtotal-value')
 const shipmentInput = document.querySelector('#shipment-value');
 const totalOrderField = document.querySelector('#total-order-value');
+
+document.addEventListener("DOMContentLoaded", function() {
+    updateCart(savedProductsArray ? savedProductsArray.length : 0);
+})
 
 function searchCep() {
     const typedCep = inputCep.value.trim().replace(/\D/g, "");

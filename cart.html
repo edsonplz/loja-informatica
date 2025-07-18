@@ -147,6 +147,15 @@
                     <h1>Resumo</h1>
                     <h2>Resumo da sua compra</h2>
                     <h3>Neste resumo incluimos o preço dos itens com o frete</h3>
+                    <div class="add-coupon">
+                        <input type="text" placeholder="Adicione um cupom" id="discount">
+                        <input type="button" value="Adicionar" onclick="addCoupon()">
+                    </div>
+                    <span class="coupon-error">Cupom inexistente ou inválido</span>
+                    <div class="coupon-added">
+                        <h4>Cupom adicionado!</h4>
+                        <span></span>
+                    </div>
                     <div class="line-infos-order">
                         <p>Subtotal</p>
                         <p>R$ <span id="subtotal-value">0</span></p>
