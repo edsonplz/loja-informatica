@@ -234,7 +234,7 @@ function searchCep() {
         inputCity.value = data.localidade;
         if (data.bairro) {
             inputNeigthborhood.value = data.bairro;
-            let changeEvent = new Event("change", {bubbles: true})
+            let changeEvent = new Event("change", { bubbles: true })
             inputNeigthborhood.dispatchEvent(changeEvent);
         }
         inputState.value = data.estado;
@@ -335,10 +335,10 @@ function updateInfoOrder() {
 
         totalOrderField.textContent = Number(subtotal.textContent) + Number(shipmentValue);
     }
+}
 
-    if (inputNeigthborhood) {
-        inputNeigthborhood.addEventListener("change", function() {
-            updateInfoOrder();
-        })
-    }
+if (inputNeigthborhood) {
+    inputNeigthborhood.addEventListener("change", function () {
+        updateInfoOrder();
+    })
 }
