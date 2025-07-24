@@ -597,6 +597,14 @@ footer .container {
     margin-top: 30px;
 }
 
+.disabled-send-order {
+    background-color: #666 !important;
+    opacity: 0.8;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

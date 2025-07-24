@@ -133,6 +133,7 @@ const neigthborhoodShipment = [
         shipment: 180
     }
 ]
+let dataCartIsEmpty = true;
 
 function increaseQuantity(event) {
     const quantityElement = event.target.parentElement.querySelector('.number-quantity');
@@ -323,12 +324,13 @@ function clearCart() {
     inputNeigthborhood.value = '';
     inputNumber.value = '';
     inputState.value = '';
+    dataCartIsEmpty = true;
     location.reload();
 }
 
-function updateInfoOrder() {
+function updateInfoOrder(discount) {
     if (subtotal) {
-        subtotal.textContent = totalOrder;
+        subtotal.textContent = totalOrder - discount;
     }
 
     if (shipmentInput && totalOrderField && savedProductsArray.length > 0 && inputNeigthborhood.value != "") {
@@ -343,6 +345,66 @@ function updateInfoOrder() {
 
 if (inputNeigthborhood) {
     inputNeigthborhood.addEventListener("change", function () {
-        updateInfoOrder();
+        dataCartIsEmpty = false;
+        updateInfoOrder(0);
+        updateButtonSendOrder();
     })
 }
+
+const availableCoupons = [
+    {
+        value: 'FREE10',
+        discount: 10
+    },
+    {
+        value: 'FREE20',
+        discount: 20
+    }
+]
+
+function addCoupon() {
+    const inputCoupon = document.querySelector('#discount');
+    const validCoupon = availableCoupons.find(coupon => coupon.value === inputCoupon.value);
+    const textCoupon = document.querySelector('.coupon-added span');
+    const errorCoupon = document.querySelector('.coupon-error');
+    errorCoupon.style.display = "none";
+
+    if(validCoupon) {
+        textCoupon.textContent = validCoupon.value;
+        updateInfoOrder(validCoupon.discount);
+    } else {
+        errorCoupon.style.display = "block";
+    }
+}
+
+function updateButtonSendOrder() {
+    const input = document.querySelector('#send-order');
+    if(input && !dataCartIsEmpty) {
+        input.classList.remove("disabled-send-order")
+    } else {
+        input.classList.add("disabled-send-order")
+    }
+}
+
+function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if(section){
+        let scrolloffset = 0;
+        scrolloffset = section.offsetTop - (window.innerHeight - section.clientHeight) / 2;
+        window.scrollTo({
+            top: scrolloffset,
+            behavior: "smooth"
+    })
+    }
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+    const links = this.document.querySelectorAll("nav a");
+    links.forEach(function(link) {
+        link.addEventListener("click", function(e){
+            e.preventDefault();
+            const sectionId = link.getAttribute("href");
+            scrollToSection(sectionId)
+        })
+    })
+})
