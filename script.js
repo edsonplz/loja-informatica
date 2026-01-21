@@ -408,3 +408,14 @@ window.addEventListener("DOMContentLoaded", function() {
         })
     })
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    const sucessMessage = document.querySelector("#sucess-message")
+    const errorMessage = document.querySelector("#error-message")
+    const loading = document.querySelector("#loading")
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+    })
+})
