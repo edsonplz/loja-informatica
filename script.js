@@ -411,11 +411,53 @@ window.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
-    const sucessMessage = document.querySelector("#sucess-message")
+    const sucessMessage = document.querySelector("#success-message")
     const errorMessage = document.querySelector("#error-message")
     const loading = document.querySelector("#loading")
 
     form.addEventListener("submit", function(e) {
         e.preventDefault();
+
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const cellphone = document.querySelector("#cellphone").value;
+        const subject = document.querySelector("#subject").value;
+        const message = document.querySelector("#message").value;
+
+        form.style.display = "none";
+        sucessMessage.style.display = "none";
+        errorMessage.style.display = "none";
+        loading.style.display = "block";
+
+        const data = {
+            to: "crafte170@gmail.com",
+            from: email,
+            subject: "Contato do site:",
+            text: "Contato do site",
+            html: `<p>Nome: ${name}</p><br/>
+                   <p>Email: ${email}</p><br/>
+                   <p>Celular: ${cellphone}</p><br/>
+                   <p>Assunto: ${subject}</p><br/>
+                   <p>Mensagem: ${message}</p>`
+        }
+
+        fetch("https://api-mail-gun-9eo3.onrender.com/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        }).then(res => {
+            if (res.ok) {
+                loading.style.display = "none";
+                sucessMessage.style.display = "block";
+            } else {
+                loading.style.display = "none";
+                errorMessage.style.display = "block";
+                console.error("Erro ao enviar o email, na resposta da api");
+            }
+        }).catch(error => {
+            loading.style.display = "none";
+            errorMessage.style.display = "block";
+            console.error("Erro ao enviar o email:", error);
+        });
     })
 })
