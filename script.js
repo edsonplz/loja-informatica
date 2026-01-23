@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loading.style.display = "block";
 
         const data = {
-            to: "crafte170@gmail.com",
+            to: "edson.silva@dcx.ufpb.br",
             from: email,
             subject: "Contato do site:",
             text: "Contato do site",

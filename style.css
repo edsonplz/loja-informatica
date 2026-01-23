@@ -261,6 +261,14 @@ header {
 }
 
 /* Estilo para produtos */
+.title-section-products {
+    font-size: 18px;
+    color: #00000080;
+    border-bottom: 1px solid #A2A6B0;
+    margin-bottom: 20px;
+    display: none;
+}
+
 .product-filter-brands ul {
     display: flex;
 }
@@ -690,6 +698,31 @@ tbody tr td:first-child {
     font-size: 18px;
 }
 
+.info-products-order-mobile {
+    display: none;
+}
+
+.info-products-order-mobile ul {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #A2A6B0;
+}
+
+.info-products-order-mobile ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.info-products-order-mobile img {
+    width: 50px;
+    height: 50px;
+}
+
+.info-products-order-mobile span {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
 .product-cart {
     display: flex;
     justify-content: center;
@@ -795,5 +828,22 @@ tbody tr td:first-child {
         flex-direction: column;
         align-items: center;
     }
+
+    .product-cover {
+        display: none;
+    }
+
+    .title-section-products {
+        display: block;
+    }
+
+    table {
+        display: none;
+    }
+
+    .info-products-order-mobile {
+        display: block;
+    }
+    
     
 }
