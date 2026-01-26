@@ -280,6 +280,32 @@ document.addEventListener("DOMContentLoaded", function () {
             tbody.appendChild(row);
         }
     }
+
+    const sectionProductsMobile = document.querySelector(".info-products-order-mobile");
+
+    if (sectionProductsMobile && savedProductsArray) {
+        for (const product of savedProductsArray) {
+            const ul = document.createElement("ul");
+            const nameProduct = document.createElement("li");
+            nameProduct.innerHTML = `Item: <span>${product.productName} <img src="${product.productImg}" alt="${product.productName}" width="100px"></span>`;
+
+            const priceProduct = document.createElement("li");
+            priceProduct.innerHTML = `Preço: <span>R$ ${product.price.toFixed(2)}</span>`;
+
+            const quantityProduct = document.createElement("li");
+            quantityProduct.innerHTML = `Quantidade: <span>${product.quantity}</span>`;
+
+            const subTotalProduct = document.createElement("li");
+            const subTotalP = product.price * product.quantity;
+            subTotalProduct.innerHTML = `Subtotal: <span>R$ ${subTotalP.toFixed(2)}</span>`;
+
+            ul.appendChild(nameProduct);
+            ul.appendChild(priceProduct);
+            ul.appendChild(quantityProduct);
+            ul.appendChild(subTotalProduct);
+            sectionProductsMobile.appendChild(ul);
+        }
+    }
 })
 
 function finishOrder() {

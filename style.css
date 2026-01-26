@@ -592,6 +592,7 @@ footer .container {
 .info-products-order {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .send-order {
