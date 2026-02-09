@@ -4,571 +4,974 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Info</title>
+    <title>Loja de informatica Code Start</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/logo_site.png">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="cab">
-                <div class="hora">
-                    <span>Seg-Sex</span>
-                    <span class="white">9:00 - 17:30</span>
+            <div class="info-header">
+                <div class="opening-hours">
+                    <p><span>Seg-Sex:</span> 9:00 - 17:00</p>
                 </div>
-                <div class="endereco">
-                    <span>Visite nossa loja no endereço rua da Code Start, 123 ou <strong class="white">Entre em contato
-                            conosco</strong></span>
+                <div class="our-adress">
+                    <p>Visite nossa loja no endereço Rua do Edson, 123 ou <span>Entre em contato conosco</span></p>
                 </div>
-                <div class="contacts white">
-                    <span>Telefone: (XX) 99999- 9999</span>
+                <div class="store-contacts">
+                    <div class="cellphones">
+                        <p>Telefone: (83) 99371 - 9980</p>
+                    </div>
+                    <div class="social-icons">
+                        <img src="./assets/facebook-filled.svg" alt="Facebook Code Start">
+                        <a href="https://www.instagram.com/joaoedson_/" target="_blank"><img src="./assets/instagram-filled.svg" alt="Instagran"></a>
+                    </div>
                 </div>
             </div>
-            <div class="navbar">
-                <div class="img">
-                    <img src="assets\logo 2.png" alt="logo">
+            <div class="navigation-header">
+                <div class="logo">
+                    <a href="./index.html"><img src="./assets/logo.png" alt="Logo Code Start"></a>
                 </div>
-                <div></div>
-                <div class="elements white">
-                    <div>CPUs</div>
-                    <div>Notebooks</div>
-                    <div>Monitores</div>
-                    <button class="botao">Entre em contato</button>
-                </div>
-                <div class="end-elements">
-                    <img src="assets/search.svg" alt="Pesquisar">
-                    <img src="assets/cart.svg" alt="Carrinho de compras">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#cpus">CPUs</a></li>
+                        <li><a href="#nooteboks">Notebooks</a></li>
+                        <li><a href="#monitors">Monitores</a></li>
+                        <li><a href="#contact">Entre em contato</a></li>
+                    </ul>
+                </nav>
+                <div class="action-icons">
+                    <img src="./assets/search.svg" alt="Busca Code Start" class="search">
+                    <div class="cart">
+                        <a href="cart.html">
+                            <img src="./assets/cart.svg" alt="Carrinho de produtos Code Start">
+                            <p class="items-cart">0</p>
+                        </a>
+                    </div>
+                    <div class="mobile-menu-icon">&#9776;</div>
                 </div>
             </div>
         </div>
     </header>
     <section id="banner">
         <div class="container">
-            <div class="banner">
-                <img src="assets\banner.png" alt="Banner">
-            </div>
+            <img src="./assets/banner.png" alt="Black Friday Code Start">
         </div>
     </section>
     <section id="new-products">
         <div class="container">
-            <div class="title-new-products">
-                <h1>Novos produtos</h1>
-                <a href="">Veja todos os produtos</a>
+            <div class="header-new-products">
+                <h1>Novos Produtos</h1>
+                <a href="#">Veja todos os produtos</a>
             </div>
-            <div class="new-products">
-                <div class="product">
-                    <div class="disponibilidade">
-                        <img src="assets/disponivel-icon.svg" alt="">
-                        <span class="green">Em estoque</span>
+            <div class="general-content-card-products">
+                <div class="card-new-products">
+                    <div class="stock">
+                        <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                        <p class="in-stock">Em estoque</p>
                     </div>
-                    <img src="assets/new-products/produto-1.svg" alt="tablet">
-                    <div class="feedbacks">
-                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                        <a href="#">Comentários (4)</a>
-                    </div>
-                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                    <br>
-                    <span class="old-price">R$ 699,00</span>
-                    <span class="new-price">R$ 499,00</span>
-                </div>
-                <div class="product">
-                    <div class="disponibilidade">
-                        <img src="assets/out-stock.svg" alt="">
-                        <span class="red">Indisponivel</span>
-                    </div>
-                    <img src="assets/new-products/produto-2.svg" alt="tablet">
-                    <div class="feedbacks">
-                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                        <a href="#">Comentários (4)</a>
-                    </div>
-                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                    <br>
-                    <span class="old-price">R$ 699,00</span>
-                    <span class="new-price">R$ 499,00</span>
-                </div>
-                <div class="product">
-                    <div class="disponibilidade">
-                        <img src="assets/disponivel-icon.svg" alt="">
-                        <span class="green">Em estoque</span>
-                    </div>
-                    <img src="assets/new-products/produto-3.svg" alt="tablet">
-                    <div class="feedbacks">
-                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                        <a href="#">Comentários (4)</a>
-                    </div>
-                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                    <br>
-                    <span class="old-price">R$ 699,00</span>
-                    <span class="new-price">R$ 499,00</span>
-                </div>
-                <div class="product">
-                    <div class="disponibilidade">
-                        <img src="assets/disponivel-icon.svg" alt="">
-                        <span class="green">Em estoque</span>
-                    </div>
-                    <img src="assets/new-products/produto-4.svg" alt="tablet">
-                    <div class="feedbacks">
-                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                        <a href="#">Comentários (4)</a>
-                    </div>
-                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                    <br>
-                    <span class="old-price">R$ 699,00</span>
-                    <span class="new-price">R$ 499,00</span>
-                </div>
-                <div class="product">
-                    <div class="disponibilidade">
-                        <img src="assets/disponivel-icon.svg" alt="">
-                        <span class="green">Em estoque</span>
-                    </div>
-                    <img src="assets/new-products/produto-5.svg" alt="tablet">
-                    <div class="feedbacks">
-                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                        <a href="#">Comentários (4)</a>
-                    </div>
-                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                    <br>
-                    <span class="old-price">R$ 699,00</span>
-                    <span class="new-price">R$ 499,00</span>
-                </div>
-                <div class="product">
-                    <div class="disponibilidade">
-                        <img src="assets/disponivel-icon.svg" alt="">
-                        <span class="green">Em estoque</span>
-                    </div>
-                    <img src="assets/new-products/produto-6.svg" alt="tablet">
-                    <div class="feedbacks">
-                        <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                        <a href="#">Comentários (4)</a>
-                    </div>
-                    <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                    <br>
-                    <span class="old-price">R$ 699,00</span>
-                    <span class="new-price">R$ 499,00</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="notebooks">
-        <div class="container">
-            <div class="navigation-section-bar">
-                <nav>
-                    <ul class="navigation-bar">
-                        <li>Todos</li>
-                        <li>Marca X</li>
-                        <li>Marca Y</li>
-                        <li>Marca Z</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <div class="category">
-                    <img src="./assets/notebook-cover.png" alt="Notebook Cover">
-                </div>
-                <div class="products">
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
+                    <img src="./assets/new-products/produto-1.svg" alt="Produto 1" class="img-product">
+                    <div class="product-review">
+                        <div class="stars">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
                         </div>
-                        <img src="./assets/notebooks/notebook-1.png" alt="notebook 1">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
+                        <p>Comentários (4)</p>
                     </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="./assets/disponivel-icon.svg" alt="Disponivel">
-                            <span class="green">Disponivel</span>
+                    <div class="content-footer-product">
+                        <div class="info-product">
+                            <h3>Tablet - Característica X, Y e Z</h3>
+                            <p class="old-price">R$ 599.00</p>
+                            <p class="new-price">R$ 499.00</p>
                         </div>
-                        <img src="./assets/notebooks/notebook-2.png" alt="notebook 2">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
+                        <div class="add-cart">
+                            <div class="actions-cart">
+                                <span class="decrease-quantity">-</span>
+                                <span class="number-quantity">0</span>
+                                <span class="increase-quantity">+</span>
+                                <img src="./assets/cart.svg" alt="Carrinho de Produtos" class="confirm-add-cart">
+                            </div>
                         </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/notebooks/notebook-3.png" alt="notebook 3">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/notebooks/notebook-4.png" alt="notebook 4">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/notebooks/notebook-5.png" alt="Notebook 5">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
                     </div>
                 </div>
-            </div>
-    </section>
-    <section id="cpu">
-        <div class="container">
-            <div class="navigation-section-bar">
-                <nav>
-                    <ul class="navigation-bar">
-                        <li>Todos</li>
-                        <li>Marca X</li>
-                        <li>Marca Y</li>
-                        <li>Marca Z</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <div class="category">
-                    <img src="./assets/cpu-cover.svg" alt="CPU">
-                </div>
-                <div class="products">
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/cpus/cpu-1.png" alt="cpu 1">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
+                <div class="card-new-products">
+                    <div class="stock">
+                        <img src="./assets/out-stock.svg" alt="Estoque indisponível">
+                        <p class="out-stock">Indisponível</p>
                     </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="./assets/disponivel-icon.svg" alt="Disponivel">
-                            <span class="green">Disponivel</span>
+                    <img src="./assets/new-products/produto-2.svg" alt="Produto 2" class="img-product">
+                    <div class="product-review">
+                        <div class="stars">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
                         </div>
-                        <img src="./assets/cpus/cpu-2.png" alt="cpu 2">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="new-price">R$ 499,00</span>
+                        <p>Comentários (4)</p>
                     </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
+                    <div class="content-footer-product">
+                        <div class="info-product">
+                            <h3>CPU Branca - Característica X, Y e Z</h3>
+                            <p class="old-price">R$ 599.00</p>
+                            <p class="new-price">R$ 499.00</p>
                         </div>
-                        <img src="./assets/cpus/cpu-3.png" alt="cpu 3">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
+                        <div class="add-cart">
+                            <div class="actions-cart">
+                                <span class="decrease-quantity">-</span>
+                                <span class="number-quantity">0</span>
+                                <span class="increase-quantity">+</span>
+                                <img src="./assets/cart.svg" alt="Carrinho de Produtos" class="confirm-add-cart">
+                            </div>
                         </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/cpus/cpu-4.png" alt="cpu 4">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/cpus/cpu-5.png" alt="CPU 5">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
                     </div>
                 </div>
-            </div>
-    </section>
-    <section id="monitores">
-        <div class="container">
-            <div class="navigation-section-bar">
-                <nav>
-                    <ul class="navigation-bar">
-                        <li>Todos</li>
-                        <li>Marca X</li>
-                        <li>Marca Y</li>
-                        <li>Marca Z</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <div class="category">
-                    <img src="./assets/monitor-cover.png" alt="Monitor Cover">
-                </div>
-                <div class="products">
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/monitores/monitor-1.png" alt="Monitor 1">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
+                <div class="card-new-products">
+                    <div class="stock">
+                        <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                        <p class="in-stock">Em estoque</p>
                     </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="./assets/disponivel-icon.svg" alt="Disponivel">
-                            <span class="green">Disponivel</span>
+                    <img src="./assets/new-products/produto-3.svg" alt="Produto 3" class="img-product">
+                    <div class="product-review">
+                        <div class="stars">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
                         </div>
-                        <img src="./assets/monitores/monitor-2.png" alt="Monitor 2">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
+                        <p>Comentários (4)</p>
                     </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
+                    <div class="content-footer-product">
+                        <div class="info-product">
+                            <h3>CPU Nova 1 - Característica X, Y e Z</h3>
+                            <p class="old-price">R$ 599.00</p>
+                            <p class="new-price">R$ 499.00</p>
                         </div>
-                        <img src="./assets/monitores/monitor-3.png" alt="Monitor 3">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
+                        <div class="add-cart">
+                            <div class="actions-cart">
+                                <span class="decrease-quantity">-</span>
+                                <span class="number-quantity">0</span>
+                                <span class="increase-quantity">+</span>
+                                <img src="./assets/cart.svg" alt="Carrinho de Produtos" class="confirm-add-cart">
+                            </div>
                         </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/monitores/monitor-4.png" alt="Monitor 4">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
-                    </div>
-                    <div class="product">
-                        <div class="disponibilidade">
-                            <img src="assets/disponivel-icon.svg" alt="">
-                            <span class="green">Em estoque</span>
-                        </div>
-                        <img src="./assets/monitores/monitor-5.png" alt="Monitor 5">
-                        <div class="feedbacks">
-                            <img class="star" src="assets\Estrelas.png" alt="icone disponivel">
-                            <a href="#">Comentários (4)</a>
-                        </div>
-                        <span class="quebra">Titulo do dispositivo - Caracteristica X, Y e Z</span>
-                        <br>
-                        <span class="old-price">R$ 699,00</span>
-                        <span class="new-price">R$ 499,00</span>
                     </div>
                 </div>
-            </div>
-    </section>
-    <section id="marcas">
-        <div class="container">
-            <div class="general-marcas">
-                <div class="marca">
-                    <img src="./assets/marcas/marca-1.png" alt="Marca 1">
+                <div class="card-new-products">
+                    <div class="stock">
+                        <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                        <p class="in-stock">Em estoque</p>
+                    </div>
+                    <img src="./assets/new-products/produto-4.svg" alt="Produto 4" class="img-product">
+                    <div class="product-review">
+                        <div class="stars">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                        </div>
+                        <p>Comentários (4)</p>
+                    </div>
+                    <div class="content-footer-product">
+                        <div class="info-product">
+                            <h3>Notebook Novo - Característica X, Y e Z</h3>
+                            <p class="old-price">R$ 599.00</p>
+                            <p class="new-price">R$ 499.00</p>
+                        </div>
+                        <div class="add-cart">
+                            <div class="actions-cart">
+                                <span class="decrease-quantity">-</span>
+                                <span class="number-quantity">0</span>
+                                <span class="increase-quantity">+</span>
+                                <img src="./assets/cart.svg" alt="Carrinho de Produtos" class="confirm-add-cart">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="marca">
-                    <img src="./assets/marcas/marca-2.png" alt="Marca 2">
+                <div class="card-new-products">
+                    <div class="stock">
+                        <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                        <p class="in-stock">Em estoque</p>
+                    </div>
+                    <img src="./assets/new-products/produto-5.svg" alt="Produto 5" class="img-product">
+                    <div class="product-review">
+                        <div class="stars">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                        </div>
+                        <p>Comentários (4)</p>
+                    </div>
+                    <div class="content-footer-product">
+                        <div class="info-product">
+                            <h3>CPU Nova 2 - Característica X, Y e Z</h3>
+                            <p class="old-price">R$ 599.00</p>
+                            <p class="new-price">R$ 499.00</p>
+                        </div>
+                        <div class="add-cart">
+                            <div class="actions-cart">
+                                <span class="decrease-quantity">-</span>
+                                <span class="number-quantity">0</span>
+                                <span class="increase-quantity">+</span>
+                                <img src="./assets/cart.svg" alt="Carrinho de Produtos" class="confirm-add-cart">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="marca">
-                    <img src="./assets/marcas/marca-3.png" alt="Marca 3">
-                </div>
-                <div class="marca">
-                    <img src="./assets/marcas/marca-4.png" alt="Marca 4">
-                </div>
-                <div class="marca">
-                    <img src="./assets/marcas/marca-5.png" alt="Marca 5">
-                </div>
-                <div class="marca">
-                    <img src="./assets/marcas/marca-6.png" alt="Marca 6">
-                </div>
-                <div class="marca">
-                    <img src="./assets/marcas/marca-7.png" alt="Marca 7">
+                <div class="card-new-products">
+                    <div class="stock">
+                        <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                        <p class="in-stock">Em estoque</p>
+                    </div>
+                    <img src="./assets/new-products/produto-6.svg" alt="Produto 6" class="img-product">
+                    <div class="product-review">
+                        <div class="stars">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                            <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                        </div>
+                        <p>Comentários (4)</p>
+                    </div>
+                    <div class="content-footer-product">
+                        <div class="info-product">
+                            <h3>CPU Nova 3 - Característica X, Y e Z</h3>
+                            <p class="old-price">R$ 599.00</p>
+                            <p class="new-price">R$ 499.00</p>
+                        </div>
+                        <div class="add-cart">
+                            <div class="actions-cart">
+                                <span class="decrease-quantity">-</span>
+                                <span class="number-quantity">0</span>
+                                <span class="increase-quantity">+</span>
+                                <img src="./assets/cart.svg" alt="Carrinho de Produtos" class="confirm-add-cart">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="depoimentos">
+    <section id="nooteboks" class="products-code-start">
         <div class="container">
-            <div class="depoimento">
-                <div class="text-depoimento">
+            <div class="product-content">
+                <div class="product-filter">
+                    <h3 class="title-section-products">Notebooks</h3>
+                    <nav class="product-filter-brands">
+                        <ul>
+                            <li class="product-brand-active" data-brand="todos" data-products-type="notebook">Todos</li>
+                            <li data-brand="marcaX" data-products-type="notebook">Marca X</li>
+                            <li data-brand="marcaY" data-products-type="notebook">Marca Y</li>
+                            <li data-brand="marcaZ" data-products-type="notebook">Marca Z</li>
+                        </ul>
+                    </nav>
+                    <div class="notebook-products">
+                        <div class="product-cover">
+                            <img src="./assets/notebook-cover.png" alt="Notebooks Code Start" />
+                        </div>
+                        <div class="general-content-card-products">
+                            <div class="card-new-products" data-brand="marcaX" data-products-type="notebook">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/notebooks/notebook-1.png" alt="Notebook 1" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Notebook 1 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaX" data-products-type="notebook">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/notebooks/notebook-2.png" alt="Notebook 2" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Notebook 2 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaY" data-products-type="notebook">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/notebooks/notebook-3.png" alt="Notebook 3" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Notebook 3 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaY" data-products-type="notebook">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/notebooks/notebook-4.png" alt="Notebook 4" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Notebook 4 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaZ" data-products-type="notebook">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/notebooks/notebook-5.png" alt="Notebook 5" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Notebook 5 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cpus" class="products-code-start">
+        <div class="container">
+            <div class="product-content">
+                <div class="product-filter">
+                    <h3 class="title-section-products">CPUs</h3>
+                    <nav class="product-filter-brands">
+                        <ul>
+                            <li class="product-brand-active" data-brand="todos" data-products-type="cpu">Todos</li>
+                            <li data-brand="marcaX" data-products-type="cpu">Marca X</li>
+                            <li data-brand="marcaY" data-products-type="cpu">Marca Y</li>
+                            <li data-brand="marcaZ" data-products-type="cpu">Marca Z</li>
+                        </ul>
+                    </nav>
+                    <div class="cpu-products">
+                        <div class="product-cover">
+                            <img src="./assets/cpu-cover.svg" alt="CPUs Code Start" />
+                        </div>
+                        <div class="general-content-card-products">
+                            <div class="card-new-products" data-brand="marcaX" data-products-type="cpu">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/cpus/cpu-1.png" alt="CPU 1" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>CPU 1 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaX" data-products-type="cpu">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/cpus/cpu-2.png" alt="CPU 2" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>CPU 2 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaY" data-products-type="cpu">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/cpus/cpu-3.png" alt="CPU 3" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>CPU 3 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaY" data-products-type="cpu">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/cpus/cpu-4.png" alt="CPU 4" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>CPU 4 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaZ" data-products-type="cpu">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/cpus/cpu-5.png" alt="CPU 5" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>CPU 5 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="monitors" class="products-code-start">
+        <div class="container">
+            <div class="product-content">
+                <div class="product-filter">
+                    <h3 class="title-section-products">Monitores</h3>
+                    <div class="monitor-products">
+                        <div class="product-cover">
+                            <img src="./assets/monitor-cover.png" alt="Monitors Code Start" />
+                        </div>
+                        <div class="general-content-card-products">
+                            <div class="card-new-products" data-brand="marcaX" data-products-type="monitor">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/monitores/monitor-1.png" alt="Monitor 1" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Monitor 1 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaX" data-products-type="monitor">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/monitores/monitor-2.png" alt="Monitor 2" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Monitor 2 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaY" data-products-type="monitor">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/monitores/monitor-3.png" alt="Monitor 3" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Monitor 3 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaY" data-products-type="monitor">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/monitores/monitor-4.png" alt="Monitor 4" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Monitor 4 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-new-products" data-brand="marcaZ" data-products-type="monitor">
+                                <div class="stock">
+                                    <img src="./assets/disponivel-icon.svg" alt="Estoque disponível">
+                                    <p class="in-stock">Em estoque</p>
+                                </div>
+                                <img src="./assets/monitores/monitor-5.png" alt="Monitor 5" class="img-product">
+                                <div class="product-review">
+                                    <div class="stars">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-cheia.svg" alt="Avaliação do produto">
+                                        <img src="./assets/star-vazia.svg" alt="Avaliação do produto">
+                                    </div>
+                                    <p>Comentários (4)</p>
+                                </div>
+                                <div class="content-footer-product">
+                                    <div class="info-product">
+                                        <h3>Monitor 5 - Característica X, Y e Z</h3>
+                                        <p class="old-price">R$ 599.00</p>
+                                        <p class="new-price">R$ 499.00</p>
+                                    </div>
+                                    <div class="add-cart">
+                                        <div class="actions-cart">
+                                            <span class="decrease-quantity">-</span>
+                                            <span class="number-quantity">0</span>
+                                            <span class="increase-quantity">+</span>
+                                            <img src="./assets/cart.svg" alt="Carrinho de Produtos"
+                                                class="confirm-add-cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sponsors">
+        <div class="container">
+            <div class="content-sponsors">
+                <div class="slider-sponsors">
+                    <img src="./assets/marcas/marca1.svg" alt="Marca 1" />
+                    <img src="./assets/marcas/marca2.svg" alt="Marca 2" />
+                    <img src="./assets/marcas/marca3.svg" alt="Marca 3" />
+                    <img src="./assets/marcas/marca4.svg" alt="Marca 4" />
+                    <img src="./assets/marcas/marca5.svg" alt="Marca 5" />
+                    <img src="./assets/marcas/marca6.svg" alt="Marca 6" />
+                    <img src="./assets/marcas/marca7.svg" alt="Marca 7" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="container">
+            <div class="content-testimonial">
+                <div class="testimonial" data-slide="1">
                     <p>Estou muito satisfeito com a minha experiência na loja de eletrônicos XYZ! Eu estava procurando
                         por um novo monitor para melhorar minha configuração de trabalho em casa e acabei encontrando
                         muito mais do que eu esperava.</p>
+                    <div class="name-testimonial">
+                        <p>-Fulano de tal</p>
+                    </div>
                 </div>
-                <div class="name-depoimento">
-                    <div class="space"></div>
-                    <p>- Nome do cliente</p>
+                <div class="testimonial" data-slide="2">
+                    <p>Estou muito satisfeito com a minha experiência. Eu estava procurando por um novo monitor para
+                        trabalho em casa e acabei encontrando muito mais do que eu esperava.</p>
+                    <div class="name-testimonial">
+                        <p>-Fulano de tal</p>
+                    </div>
                 </div>
-                <div class="actions-scrool">
-                    <div class="space"></div>
-                    <p>ooooo</p>
+                <div class="testimonial" data-slide="3">
+                    <p>Estou muito satisfeito. Eu estava procurando por um novo monitor e acabei encontrando muito mais
+                        do que eu esperava.</p>
+                    <div class="name-testimonial">
+                        <p>-Fulano de tal</p>
+                    </div>
+                </div>
+                <div class="testimonial" data-slide="4">
+                    <p>Estou muito satisfeito. Eu estava procurando por um novo monitor.</p>
+                    <div class="name-testimonial">
+                        <p>-Fulano de tal</p>
+                    </div>
+                </div>
+                <div class="controls-testimonials">
+                    <span class="active-testimonial" data-slide="1"></span>
+                    <span data-slide="2"></span>
+                    <span data-slide="3"></span>
+                    <span data-slide="4"></span>
                 </div>
             </div>
         </div>
     </section>
-    <section id="benefits">
+    <section id="quality">
         <div class="container">
-            <div class="general-benefits">
-                <div class="benefit">
-                    <img src="./assets/benefits/Support.svg" alt="Suporte ao Cliente">
-                    <h2>Suporte</h2>
-                    <p>Nosso suporte funciona de Segunda à Sexta de 09h às 17h30.</p>
+            <div class="info-quality">
+                <div class="card-quality">
+                    <img src="./assets/support.svg" alt="Suporte Code Start">
+                    <h1>Suporte</h1>
+                    <h2>Nosso suporte funciona de Segunda à Sexta de 09h às 17h30</h2>
                 </div>
-                <div class="benefit">
-                    <img src="./assets/benefits/Account.svg" alt="Garantia">
-                    <h2>Garantia</h2>
-                    <p>Nossa garantia é de 1 ano após a compra de qualquer equipamento.</p>
+                <div class="card-quality">
+                    <img src="./assets/Account.svg" alt="Garantia Code Start">
+                    <h1>Garantia</h1>
+                    <h2>Nossa garantia é de 1 ano após a compra de qualquer equipamento</h2>
                 </div>
-                <div class="benefit">
-                    <img src="./assets/benefits/Saving.svg" alt="Melhor Preço">
-                    <h2>Melhor Preço</h2>
-                    <p>Todos os nossos produtos estão pelo menos 20% mais baratos do que os concorrentes.</p>
+                <div class="card-quality">
+                    <img src="./assets/Saving.svg" alt="Suporte Code Start">
+                    <h1>Melhor Preço</h1>
+                    <h2>Todos os nossos produtos estão pelo menos 20% mais baratos do que os concorrentes</h2>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact">
         <div class="container">
-            <div class="general-form">
-                <div class="form">
-                    <div class="header-section">
-                        <h1 class="title-contact">Entre em contato</h1>
-                        <h3 class="subtitle-contact">Se você tiver qualquer dúvida, você pode ligar para a nossa loja ou
-                            enviar uma mensagem no formulário de contato abaixo!</h3>
-                    </div>
-                    <div class="info-contact">
-                        <form class="groups">
-                            <div class="input-group">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" placeholder="Nome" />
+            <div class="general-content-form">
+                <div class="intern-content-form">
+                    <form>
+                        <div class="titles-form">
+                            <h1>Entre em contato</h1>
+                            <p>Se você tiver qualquer dúvida, você pode ligar para a nossa loja ou enviar uma mensagem
+                                no formulário de contato abaixo!</p>
+                        </div>
+                        <div class="info-content-form">
+                            <div class="line-form">
+                                <div class="group-form">
+                                    <label>Nome<span>*</span></label>
+                                    <input type="text" id="name" placeholder="Nome" />
+                                </div>
+                                <div class="group-form">
+                                    <label>Assunto<span>*</span></label>
+                                    <input type="text" id="subject" placeholder="Assunto" />
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <label for="assunto">Assunto</label>
-                                <input type="text" id="assunto" placeholder="Assunto" />
+                            <div class="line-form">
+                                <div class="group-form">
+                                    <label>Telefone<span>*</span></label>
+                                    <input type="text" id="cellphone" placeholder="Telefone" />
+                                </div>
+                                <div class="group-form">
+                                    <label>E-mail<span>*</span></label>
+                                    <input type="email" id="email" placeholder="E-mail" />
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" id="telefone" placeholder="Telefone" />
+                            <div class="group-form">
+                                <label>Mensagem</label>
+                                <textarea id="message" placeholder="Escreva toda a sua dúvida"></textarea>
                             </div>
-                            <div class="input-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Email" />
-                            </div>
-                            <div class="input-group full">
-                                <label for="mensagem">Mensagem</label>
-                                <textarea id="mensagem" placeholder="Escreva toda a sua dúvida"></textarea>
-                            </div>
-                            <div class="submit-form">
-                                <input type="submit" value="Enviar">
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <input type="submit" value="Enviar" />
+                    </form>
+                    <p id="loading" style="display: none;">Carregando</p>
+                    <p id="success-message" style="display: none;">Mensagem enviada com sucesso!</p>
+                    <p id="error-message" style="display: none;">Erro ao enviar mensagem. Envie um email para
+                        edson.silva@dcx.ufpb.br</p>
                 </div>
-                <div class="contacts-info">
-                    <div class="details-info">
-                        <div class="title-info">
-                            <img src="./assets/local-icon.png" alt="">
-                            <h2>Endereço:</h2>
+                <div class="infos-contact">
+                    <div class="line-contact-info">
+                        <img src="./assets/local-icon.svg" alt="Endereço Code Start">
+                        <div class="text-contact-info">
+                            <h3>Endereço:</h3>
+                            <h4>Rua do Edson, 123</h4>
                         </div>
-                        <p>Rua da Code Start, 123</p>
                     </div>
-                    <div class="details-info">
-                        <div class="title-info">
-                            <img src="./assets/tel-icon.png" alt="">
-                            <h2>Telefone:</h2>
+                    <div class="line-contact-info">
+                        <img src="./assets/phone-icon.svg" alt="Telefone Code Start">
+                        <div class="text-contact-info">
+                            <h3>Telefone:</h3>
+                            <h4>(83) 99371-9980</h4>
                         </div>
-                        <p>(31) 9999 - 9999</p>
                     </div>
-                    <div class="details-info">
-                        <div class="title-info">
-                            <img src="./assets/hours-icon.png" alt="">
-                            <h2>Horário:</h2>
+                    <div class="line-contact-info">
+                        <img src="./assets/hours-icon.svg" alt="Horario Code Start">
+                        <div class="text-contact-info">
+                            <h3>Horário:</h3>
+                            <h4>Segunda - Sexta , 9:00 - 17:00</h4>
                         </div>
-                        <p>Segunda - Sexta 9:00 - 17:30</p>
                     </div>
-                    <div class="details-info">
-                        <div class="title-info">
-                            <img src="./assets/mail-icon.png" alt="">
-                            <h2>E-mail:</h2>
+                    <div class="line-contact-info">
+                        <img src="./assets/mail-icon.svg" alt="Email Code Start">
+                        <div class="text-contact-info">
+                            <h3>Email:</h3>
+                            <h4>edson.silva@dcx.ufpb.br</h4>
                         </div>
-                        <p>contato@icodestart.com</p>
                     </div>
                 </div>
             </div>
@@ -576,44 +979,45 @@
     </section>
     <footer>
         <div class="container">
-            <div class="invite-news">
-                <div class="news-info">
+            <div class="newsletter-footer">
+                <div class="titles-newsletter">
                     <h1>Assine nossa newsletter</h1>
-                    <p>Fique por dentro das melhores ofertas da loja</p>
+                    <h2>Fique por dentro das melhores ofertas da loja</h2>
                 </div>
-                <div class="form-news">
-                    <input type="email" id="email-news" placeholder="Seu e-mail">
-                    <input type="submit" value="Enviar" id="submit-news">
-                </div>
-            </div>
-            <div class="info-store">
-                <div class="info">
-                    <h1>Endereço</h1>
-                    <br/>
-                    <p>Rua da Code Start, 123</p>
-                    <p>Telefone: <a>(XX) 99999-9999</a></p>
-                    <p>Horário: Segunda-Sexta: 9:00 - 17:00</p>
-                    <p>Email: <a href="#">contato@gmail.com</a></p>
+                <div class="input-form-newsletter">
+                    <input type="text" id="newsletter-email" placeholder="Seu email" class="input-newsletter" />
+                    <input type="submit" value="Enviar" />
                 </div>
             </div>
-            <div class="icons-footer">
-                <div class="social-media-icons">
-                    <img src="./assets/facebook-filled.svg" alt="Facebook">
-                    <img src="./assets/instagram-filled.svg" alt="Instagran">
+            <div class="infos-footer">
+                <div class="card-footer">
+                    <span>Endereço</span>
+                    <p>Rua do Edson, 123</p>
+                    <p>Telefone <a href="tel:+5583993719980">(83) 99371-9980</a></p>
+                    <p>Horário: Segunda-Sexta: 9:00 - 17:30 </p>
+                    <p>Email: <a href="mailto:edson.silva@dcx.ufpb.br">edson.silva@dcx.ufpb.br</a></p>
                 </div>
-                <div class="pay-icons">
-                    <img src="./assets/payments/paypal.svg" alt="Paypal">
-                    <img src="./assets/payments/visa.svg" alt="Visa">
-                    <img src="./assets/payments/maestro.svg" alt="Maestro">
-                    <img src="./assets/payments/discover.svg" alt="Discovery">
-                    <img src="./assets/payments/american-express.svg" alt="American Express">
-                </div>
-                <div class="copyright">
-                    <p>Copyright © 2025 Edson</p>
+                <div class="additional-infos-footer">
+                    <div class="social-icons-footer">
+                        <img src="./assets/facebook-filled.svg" alt="Facebook">
+                        <a href="https://www.instagram.com/joaoedson_/" target="_blank"><img src="./assets/instagram-filled.svg" alt="Instagran"></a>
+                    </div>
+                    <div class="credit-cards-accepted">
+                        <img src="./assets/payments/paypal.svg" alt="Paypal">
+                        <img src="./assets/payments/visa.svg" alt="Visa">
+                        <img src="./assets/payments/maestro.svg" alt="Maestro">
+                        <img src="./assets/payments/discover.svg" alt="Discover">
+                        <img src="./assets/payments/american-express.svg" alt="American Express">
+                    </div>
+                    <div class="copy">
+                        <span>Copyright &copy; 2026 Edson</span>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
